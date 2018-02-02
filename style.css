@@ -1,0 +1,98 @@
+body{
+  /* background-image: url("background4.png");
+   background-repeat: no-repeat;*/
+   background-color: #18121e;
+    font-family: Comic Sans MS;
+  }
+  h1{
+    color: #fff;
+    text-align: center;
+    font-size: 74px;
+    letter-spacing: 10px;
+  }
+  #del-countdown{
+    width: 850px;
+    margin: 5% auto;
+
+  }
+  #clock span{
+    float: left;
+    text-align: center;
+    font-size: 84px;
+    margin: 0 2.5%;
+    color: #fff;
+    padding: 20px;
+    width: 20%;
+    border-radius: 20px;
+    box-sizing: border-box;
+  }
+  #clock span:nth-child(1){
+    background: #eac67a;
+  }
+  #clock span:nth-child(2){
+    background: #eac67a;
+  }
+  #clock span:nth-child(3){
+    background: #eac67a;
+  }
+  #clock span:nth-child(4){
+    background: #eac67a;
+  }
+  #clock:after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+  #units span{
+    float: left;
+    width: 25%;
+    font-size:35px;
+    text-align: center;
+    margin-top: 30px;
+    color: #ddd;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 1px rgba(10,10,10, 0.7);
+  }
+  
+  span.turn{
+    animation: turn 0.7s ease forwards;
+  }
+  
+  @keyframes turn{
+    0%{transform: rotateX(0deg)}
+    25%{transform: rotateX(90deg)}
+    50%{transform: rotateX(180deg)}
+    75%{transform: rotateX(270deg)}
+    100%{transform: rotateX(360deg)}
+  }
+#wish{
+  display: none;
+}
+
+#suprise{
+  color:#fff;
+  text-align: center;
+}
+#suprise:hover #wish{
+  display:block;
+}
+#suprise:hover #count{
+  display: none;
+}
+#wish img{
+   max-width: 1690px;
+    position: absolute;
+    z-index: -1;
+    margin: -60px -10px;
+}
+#closed-gift img{
+    padding:0px 580px;
+    /*display: none;*/
+}
+#wish-gift img{
+    display: none;
+    max-width: 1690px;
+    padding:0px 425px;
+}
