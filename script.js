@@ -50,3 +50,23 @@ function updateTimer(deadline){
     startTimer("clock", deadline);
   };
   
+  document.getElementById("demo").innerHTML = Date();
+  var end = Date();
+  
+
+
+  //var oHide = document.querySelector("#not-ready");
+ 
+  
+  //firstDiv.addEventListener("mouseover", function(){
+     // oHide.innerHTML = 
+  //});
+  $(document).ready(function(){
+		$('#closed-present-box').hover(function() {
+			$('#not-ready').css("display", "none");
+		});
+	});
+  
+
+  
+ 

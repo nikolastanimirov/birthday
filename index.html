@@ -5,32 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Birthday Girl &#10084;</title>
+   <title>Birthday Girl &#10084;</title>
 </head>
 <body>
-    <div id="suprise">Wish
-        <div id="wish">
-            <h1>Happy Birthday, Yoanna!&#10084;</h1>
-        </div>
+    <div class="surprise">
+            <div id="closed-present-box">
+                    <img class="box" src="closed-gift.png"
+                    onmouseover="this.src='box-suprised.png';"
+                    onmouseout="this.src='closed-gift.png';"></div>
+           
+          <div id="wish"><h1>Happy Birthday Yoanna &#10084;</h1></div>
+             <div id="not-ready"><h1>Days Remaining...</h1></div>
+                <div id="del-countdown">
+                    <div id="clock"></div>
+                        <div id="units">
+                            <span>Days</span>
+                            <span>Hours</span>
+                            <span>Minutes</span>
+                            <span>Seconds</span>
+                        </div>
+                     </div>        
     </div>
-       <div id="count">
-         <h1>Days Remaining...</h1>
-        </div>
-         <div id="del-countdown">
-                <div id="clock"></div>
-                <div id="units">
-                  <span>Days</span>
-                  <span>Hours</span>
-                  <span>Minutes</span>
-                  <span>Seconds</span>
-                </div>
-              </div>
-              <div id="closed-gift">
-                  <img src="closed-gift.png">
-              </div>
-              <div id="wish-gift">
-                  <img src="box-suprised.png">
-              </div>
-              <script src="script.js"></script>
-            </body>
+    <div id="background"><img src="background4.png"/></div>  
+        <script src="script.js"></script>
+            <script>
+                var end = new Date('2018-02-25, 00:00:00');
+            var now = new Date();
+            if (end - now >= 0) {
+                var e = document.getElementById('closed-present-box');
+                e.parentElement.removeChild(e);
+                var k = document.getElementById('background');
+                k.parentElement.removeChild(k);
+                
+            }
+            else{
+                var i = document.getElementById('not-ready');
+                i.parentElement.removeChild(i);
+                alert("Open your present darling!");
+            }
+        </script>
+    </body>
 </html>
