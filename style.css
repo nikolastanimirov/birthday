@@ -93,3 +93,43 @@ body{
   z-index: -1000;
   width:2255px;
 }
+@media screen and (max-width: 1024px) {
+  #background img {
+      width:500px;
+  }
+  #closed-present-box img{
+    width:200px;
+    top:-165px; bottom:0; left:0;right:0;
+  }
+  #del-countdown{
+    width:300px;
+    margin-left:85px;
+    margin-top:80px; 
+  }
+  #clock span{
+    width:60px;
+    height: 60px;
+    font-size: 15px;
+  }
+  #units span{
+    width:40px;
+    font-size: 10px;
+    padding: 0 15px;    
+  }
+  #wish h1{
+    font-size: 40px;
+    margin-top:20px;
+  }
+  #not-ready h1{
+    width:100px;
+    margin: 0 70px;
+    font-size: 40px;
+    margin-top:-30px;
+  }
+}
+
+/*@media screen and (max-width: 2500px) {
+ #background img{
+  display: block;
+ }
+}*/
