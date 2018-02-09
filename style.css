@@ -68,6 +68,7 @@ body{
     100%{transform: rotateX(360deg)}
   }
 #wish{
+  visibility: hidden;
   opacity: 0.0;
   -webkit-transition: all 500ms ease-in-out;
   -moz-transition: all 500ms ease-in-out;
@@ -82,7 +83,9 @@ body{
   margin: auto;
 }
 #closed-present-box:hover + #wish{
+  visibility: visible;
   opacity: 1.0;
+
 
 }
 #background img{
